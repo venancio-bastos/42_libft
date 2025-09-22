@@ -6,7 +6,7 @@
 #    By: vebastos <vebastos@>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/09/17 18:28:58 by vebastos          #+#    #+#              #
-#    Updated: 2025/09/22 17:49:54 by vebastos         ###   ########.fr        #
+#    Updated: 2025/09/22 18:16:00 by vebastos         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Wextra - Werror;
 
-SRC = isalpha.c
+SRC = ft_isalpha.c \
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
@@ -27,10 +27,10 @@ $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJ)
+	rm -rf $(OBJ)
 
 fclean:
-	rm -f $(NAME)
+	rm -rf $(NAME)
 	
 re: fclean all
 
