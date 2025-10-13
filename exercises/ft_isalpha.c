@@ -3,17 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vebastos <vebastos@>                       +#+  +:+       +#+        */
+/*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/22 17:51:37 by vebastos          #+#    #+#             */
-/*   Updated: 2025/09/22 18:19:15 by vebastos         ###   ########.fr       */
+/*   Created: 2025/10/13 11:36:16 by vebastos          #+#    #+#             */
+/*   Updated: 2025/10/13 12:42:15 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+//#include <stdio.h>
+
+int	ft_isalpha(char c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
-	else
-		return (0);
+	return (0);
 }
+
+/*int	main(void)
+{
+	char	l;
+
+	l = '@';
+	ft_isalpha(l);
+	return (0);
+}*/
