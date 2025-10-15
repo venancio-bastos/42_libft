@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vebastos <vebastos@>                       +#+  +:+       +#+        */
+/*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 16:02:45 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/14 12:56:54 by vebastos         ###   ########.fr       */
+/*   Updated: 2025/10/15 11:24:32 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_bzero(void  *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*ptr;
 
 	*prt = (unsigned char *) s;
@@ -20,6 +20,6 @@ void	ft_bzero(void  *s, size_t n)
 	while (i < n)
 	{
 		ptr[i] = '\0';
-		i ++
+		i++;
 	}
 }

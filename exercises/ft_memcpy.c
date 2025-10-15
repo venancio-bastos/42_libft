@@ -3,22 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vebastos <vebastos@>                       +#+  +:+       +#+        */
+/*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 16:13:03 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/14 13:21:28 by vebastos         ###   ########.fr       */
+/*   Updated: 2025/10/15 15:36:03 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h> 
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	const unsigned char *psrc;
- 	unsigned char *pdest;
-	size_t	i;
+	size_t				i;
+	const unsigned char	*psrc;
+	unsigned char		*pdest;
 
 	psrc = (const unsigned char *) src;
 	pdest = (unsigned char *) dest;
@@ -31,6 +29,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (pdest);
 }
 
+/*
 int	main(int ac, char **av)
 {
 	(void) ac;
@@ -46,6 +45,4 @@ int	main(int ac, char **av)
 	printf("ft_memcpy: %s\n", dest2);
 	return (0);
 }
-
-
-//Rever
+*/

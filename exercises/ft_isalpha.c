@@ -6,11 +6,11 @@
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 11:36:16 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/13 12:42:15 by vebastos         ###   ########.fr       */
+/*   Updated: 2025/10/15 15:36:31 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
+#include "libft.h"
 
 int	ft_isalpha(char c)
 {
@@ -19,11 +19,13 @@ int	ft_isalpha(char c)
 	return (0);
 }
 
-/*int	main(void)
+/*
+int	main(void)
 {
 	char	l;
 
 	l = '@';
 	ft_isalpha(l);
 	return (0);
-}*/
+}
+*/

@@ -6,7 +6,7 @@
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 11:48:30 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/13 12:43:58 by vebastos         ###   ########.fr       */
+/*   Updated: 2025/10/15 15:36:42 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,11 @@ int	ft_isalnum(char *str)
 	return (1);
 }
 
-/*int	main(int ac, char **av)
+/*
+int	main(int ac, char **av)
 {
 	(void) ac;
 	ft_isalnum(av[1]);
 	return (0);
-}*/
+}
+*/

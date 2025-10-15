@@ -6,13 +6,52 @@
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 13:24:24 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/14 13:53:13 by vebastos         ###   ########.fr       */
+/*   Updated: 2025/10/15 15:35:51 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
--- Compare memmove and memcpy --
-- Understand the overlaping thing (if memcpy caresz about ooverlaping why the values are passed directly and memmove that dont care about overlap needs to use a temp array to pass the values)
-- Logic behind passing the src to a temp array then to the dest. What happens to the dest? 
-*/ 
+#include "libft.h"
 
+void	*ft_memmove(void *dest, const void *src, size_t n)
+{
+	size_t			i;
+
+	if (!(dest || src))
+		return (0);
+	if (dest < src)
+	{
+		i = 0;
+		while (i < n)
+		{
+			*((unsigned char *) dest + i) = *((unsigned char *) src + i);
+			i++;
+		}
+	}
+	else
+	{
+		i = n;
+		while (i > 0)
+		{
+			i--;
+			*((unsigned char *) dest + i) = *((unsigned char *) src + i);
+		}
+	}
+	return (*(unsigned char *) dest);
+}
+
+/*
+int	main(void)
+{
+	char str1[] = "Geeks";
+	char str2[] = "Quiz";
+	ft_memmove(str1, str2, sizeof(str2));
+	printf("After - My func\n");
+	printf("%s", str1);
+	printf("\n");
+	memmove(str1, str2, sizeof(str2));
+	printf("After - Bib func\n");
+	printf("%s", str1);
+	printf("\n");
+	return (0);
+}
+*/
