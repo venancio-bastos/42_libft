@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
+/*   By: venanciobastos <venanciobastos@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 13:15:44 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/15 18:54:45 by vebastos         ###   ########.fr       */
+/*   Updated: 2025/10/19 16:26:16 by venanciobas      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//Refazer
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
@@ -28,7 +30,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	dst[i] = '\0';
 	return (i);
 }
-
 
 /*
 int	main(void)

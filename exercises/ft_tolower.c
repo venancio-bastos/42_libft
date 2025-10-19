@@ -1,26 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: venanciobastos <venanciobastos@student.    +#+  +:+       +#+        */
+/*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/15 15:43:19 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/19 16:26:27 by venanciobas      ###   ########.fr       */
+/*   Created: 2025/10/19 16:49:32 by vebastos          #+#    #+#             */
+/*   Updated: 2025/10/19 16:54:02 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Tentar segunda
-
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
+int	ft_toupper(int c)
 {
-
-}
-
-int	main(void)
-{
-
-	return (0);
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
+	else
+		return (c);
 }
