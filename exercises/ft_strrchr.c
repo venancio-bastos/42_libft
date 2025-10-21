@@ -1,31 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/13 11:36:16 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/20 14:35:08 by vebastos         ###   ########.fr       */
+/*   Created: 2025/10/20 11:03:14 by vebastos          #+#    #+#             */
+/*   Updated: 2025/10/20 11:20:34 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(char c)
+char	*ft_strrchr(const char *s, int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return (1);
-	return (0);
+	int	i;
+	int	last;
+
+	i = 0;
+	last = -1;
+	while (s[i])
+	{
+		if (s[i] == c)
+			last = i;
+		i++;
+	}
+	if (last > -1)
+		return ((char *)(s + last));
+	else if (c == '\0')
+		return ((char *)(s + i));
+	else
+		return (NULL);
 }
 
 /*
+#include <string.h>
 int	main(void)
 {
-	char	l;
-
-	l = '@';
-	ft_isalpha(l);
+	char	s[10] = "Hello lol";
+	printf("My fc: %s", ft_strrchr(s, 'l'));
+	printf("\n");
+	printf("Original fc: %s", strrchr(s, 'l'));
 	return (0);
 }
 */

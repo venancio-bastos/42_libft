@@ -1,31 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/13 11:36:16 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/20 14:35:08 by vebastos         ###   ########.fr       */
+/*   Created: 2025/10/20 18:03:53 by vebastos          #+#    #+#             */
+/*   Updated: 2025/10/21 12:01:23 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(char c)
+int	ft_atoi(const char *nptr)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return (1);
-	return (0);
-}
+	int	i;
+	int	result;
+	int	sig;
 
-/*
-int	main(void)
-{
-	char	l;
-
-	l = '@';
-	ft_isalpha(l);
-	return (0);
+	sig = 1;
+	result = 0;
+	i = 0;
+	while (nptr[i] == 32 || (nptr[i] >= 9 && nptr[i] <= 13))
+		i++;
+	if (nptr[i] == '-' || nptr[i] == '+')
+	{
+		if (nptr[i] == '-')
+		{
+			sig = -1;
+		}
+		i++;
+	}
+	while (nptr[i] == '-' || nptr[i] == '+')
+		i++;
+	while (nptr[i] >= '0' && nptr[i] <= '9')
+	{
+		result = (nptr[i] - '0') + (result * 10);
+		i++;
+	}
+	return (result * sig);
 }
-*/

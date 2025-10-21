@@ -1,31 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/13 11:36:16 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/20 14:35:08 by vebastos         ###   ########.fr       */
+/*   Created: 2025/10/20 17:54:08 by vebastos          #+#    #+#             */
+/*   Updated: 2025/10/20 18:01:50 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int	ft_isalpha(char c)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return (1);
-	return (0);
-}
+	size_t	i;
+	const char	*cS1;
+	const char	*cS2;
 
-/*
-int	main(void)
-{
-	char	l;
-
-	l = '@';
-	ft_isalpha(l);
-	return (0);
+	cS1 = (const char *) s1;	
+	cS2 = (const char *) s2;	
+	i = 0;
+	while (i < n)
+	{
+		if (cS1[i] != cS2[i])
+			break ;
+		i++;
+	}
+	return (cS1[i] - cS2[i]);
 }
-*/

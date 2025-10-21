@@ -6,13 +6,15 @@
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 13:34:10 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/13 13:35:24 by vebastos         ###   ########.fr       */
+/*   Updated: 2025/10/21 12:22:26 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include "libft.h"
+
+size_t	ft_strlen(const char *str)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (str[i])

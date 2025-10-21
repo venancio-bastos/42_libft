@@ -6,7 +6,7 @@
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 13:24:24 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/15 15:35:51 by vebastos         ###   ########.fr       */
+/*   Updated: 2025/10/20 14:49:56 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	size_t			i;
 
-	if (!(dest || src))
-		return (0);
 	if (dest < src)
 	{
 		i = 0;
