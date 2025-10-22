@@ -6,13 +6,13 @@
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 14:51:44 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/21 15:13:45 by vebastos         ###   ########.fr       */
+/*   Updated: 2025/10/21 18:42:12 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
 	size_t	size_s;
 	char	*new_s;

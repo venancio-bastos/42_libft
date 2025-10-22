@@ -6,7 +6,7 @@
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 12:10:50 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/21 14:59:19 by vebastos         ###   ########.fr       */
+/*   Updated: 2025/10/21 18:42:42 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <stddef.h>
 # include <string.h>
 
+char	*ft_strdup(const char *s);
 int	ft_isalpha(char c);
 int	ft_isdigit(char c);
 int	ft_isalnum(char *str);
