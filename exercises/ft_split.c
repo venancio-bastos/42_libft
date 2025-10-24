@@ -6,7 +6,7 @@
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 00:29:23 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/23 18:35:51 by vebastos         ###   ########.fr       */
+/*   Updated: 2025/10/24 13:07:53 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,7 +80,7 @@ char	**ft_split(char const *s, char c)
 	return (arr);
 }
 
-
+/*
 int	main(void)
 {
 	char const s[100] = "   Hello 42 World       ";
@@ -94,4 +94,4 @@ int	main(void)
 	printf("Number of words: %d\n", get_words(s, ' '));
 	return (0);
 }
-
+*/

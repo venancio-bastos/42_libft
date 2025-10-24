@@ -1,31 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/20 17:54:08 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/24 13:36:38 by vebastos         ###   ########.fr       */
+/*   Created: 2025/10/24 17:31:55 by vebastos          #+#    #+#             */
+/*   Updated: 2025/10/24 17:47:07 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	size_t		i;
-	const char	*cs1;
-	const char	*cs2;
-
-	cs1 = (const char *) s1;
-	cs2 = (const char *) s2;
-	i = 0;
-	while (i < n)
+	t_list	*new_node;
+	if (lst)
 	{
-		if (cs1[i] != cs2[i])
-			break ;
-		i++;
+		if (*lst)
+			new_node = ft_lstlast(*lst);
+			new_node->next = new;
+		else
+			*lst = new;
 	}
-	return (cs1[i] - cs2[i]);
 }

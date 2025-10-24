@@ -1,31 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/20 17:54:08 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/24 13:36:38 by vebastos         ###   ########.fr       */
+/*   Created: 2025/10/24 14:35:57 by vebastos          #+#    #+#             */
+/*   Updated: 2025/10/24 17:04:29 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+t_list	*ft_lstnew(void *content)
 {
-	size_t		i;
-	const char	*cs1;
-	const char	*cs2;
+	t_list	*new_node;
 
-	cs1 = (const char *) s1;
-	cs2 = (const char *) s2;
-	i = 0;
-	while (i < n)
-	{
-		if (cs1[i] != cs2[i])
-			break ;
-		i++;
-	}
-	return (cs1[i] - cs2[i]);
+	new_node = malloc(sizeof(t_list));
+	if (!new_node)
+		return (NULL);
+	new_node->next = NULL;
+	new_node->content = content;
+	return (new_node);
 }
+

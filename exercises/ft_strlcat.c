@@ -6,7 +6,7 @@
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 15:43:19 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/21 12:39:12 by vebastos         ###   ########.fr       */
+/*   Updated: 2025/10/24 13:13:46 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	size_t i;
-	size_t d_len;
-	size_t s_len;
-	int space_left;
+	size_t	i;
+	size_t	d_len;
+	size_t	s_len;
+	int		space_left;
 
 	d_len = ft_strlen(dst);
 	s_len = ft_strlen(src);
