@@ -6,31 +6,22 @@
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 11:48:30 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/15 15:36:42 by vebastos         ###   ########.fr       */
+/*   Updated: 2025/10/27 16:49:59 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/**
+ * @file ft_isalnum.c
+ * @brief Checks if c is a number or a syllable
+ */
+
 #include "libft.h"
 
-int	ft_isalnum(char *str)
-{
-	int	i;
+#include <ctype.h>
 
-	i = 0;
-	while (str[i])
-	{
-		if (!(ft_isalpha(str[i]) && ft_isdigit(str[i])))
-			return (0);
-		i++;
-	}
+int	ft_isalnum(int c)
+{
+	if (!(ft_isalpha(c) || ft_isdigit(c)))
+		return (0);
 	return (1);
 }
-
-/*
-int	main(int ac, char **av)
-{
-	(void) ac;
-	ft_isalnum(av[1]);
-	return (0);
-}
-*/

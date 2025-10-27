@@ -6,9 +6,14 @@
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 13:34:10 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/21 12:22:26 by vebastos         ###   ########.fr       */
+/*   Updated: 2025/10/27 15:01:59 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/**
+ * @file ft_strlen.c
+ * @brief Gets the length of a string
+ */
 
 #include "libft.h"
 

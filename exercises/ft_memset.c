@@ -6,9 +6,14 @@
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 13:35:48 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/15 15:35:15 by vebastos         ###   ########.fr       */
+/*   Updated: 2025/10/27 15:03:50 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/**
+ * @file ft_memset.c
+ * @brief Set the memory to the value represented by "c"
+ */
 
 #include "libft.h"
 

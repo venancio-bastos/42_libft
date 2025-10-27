@@ -6,15 +6,20 @@
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 13:12:24 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/24 13:36:48 by vebastos         ###   ########.fr       */
+/*   Updated: 2025/10/27 16:02:12 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/**
+ * @file ft_isprint.c
+ * @brief Checks if c is printable
+ */
 
 #include "libft.h"
 
 int	ft_isprint(int c)
 {
-	if ((c >= 9 && c <= 11) || (c >= 32 && c <= 126))
+	if (c >= 32 && c < 127)
 		return (1);
 	return (0);
 }

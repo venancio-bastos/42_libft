@@ -6,7 +6,7 @@
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 17:16:34 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/24 17:23:02 by vebastos         ###   ########.fr       */
+/*   Updated: 2025/10/27 13:03:49 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	int	i;
+	int	cont;
 
-	i = 0;
+	cont = 0;
 	while (lst)
 	{
-		i++;
+		cont++;
 		lst = lst->next;
 	}
-	return (i);
+	return (cont);
 }

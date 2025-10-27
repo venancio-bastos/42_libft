@@ -6,26 +6,13 @@
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 11:36:16 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/20 14:35:08 by vebastos         ###   ########.fr       */
+/*   Updated: 2025/10/27 17:34:52 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int	ft_isalpha(char c)
+int	ft_isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
 	return (0);
 }
-
-/*
-int	main(void)
-{
-	char	l;
-
-	l = '@';
-	ft_isalpha(l);
-	return (0);
-}
-*/

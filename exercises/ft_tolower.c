@@ -6,13 +6,13 @@
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 16:49:32 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/24 13:13:21 by vebastos         ###   ########.fr       */
+/*   Updated: 2025/10/27 16:23:51 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (c + 32);

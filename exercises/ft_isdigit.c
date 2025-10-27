@@ -6,26 +6,13 @@
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 11:44:27 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/15 15:36:15 by vebastos         ###   ########.fr       */
+/*   Updated: 2025/10/27 17:34:51 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int	ft_isdigit(char c)
+int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);
 	return (0);
 }
-
-/*
-int	main(void)
-{
-	int	i;
-
-	i = 'x';
-	ft_isdigit(i);
-	return (0);
-}
-*/

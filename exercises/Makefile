@@ -6,7 +6,7 @@
 #    By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/24 13:43:33 by vebastos          #+#    #+#              #
-#    Updated: 2025/10/24 13:44:58 by vebastos         ###   ########.fr        #
+#    Updated: 2025/10/27 16:35:16 by vebastos         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,7 +52,7 @@ SRC =	ft_isalpha.c \
 OBJ = $(SRC:.c=.o)
 
 
-# SRCB =	$(SRC) \
+SRCB =	$(SRC) \
 	ft_lstnew_bonus.c \
 	ft_lstadd_front_bonus.c \
 	ft_lstlast_bonus.c \
@@ -63,13 +63,13 @@ OBJ = $(SRC:.c=.o)
 	ft_lstiter_bonus.c \
 	ft_lstmap_bonus.c \
 	ft_lstadd_back_bonus.c
-# OBJB = $(SRCB:.c=.o)
+OBJB = $(SRCB:.c=.o)
 
 RM = rm -rf
 
 all: $(NAME)
 
-%.o: %.c
+%.o: %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME): $(OBJ)

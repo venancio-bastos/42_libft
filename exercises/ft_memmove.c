@@ -6,7 +6,7 @@
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 13:24:24 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/20 14:49:56 by vebastos         ###   ########.fr       */
+/*   Updated: 2025/10/27 17:40:39 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	size_t			i;
 
+	if (!dest && !src)
+		return (NULL);
 	if (dest < src)
 	{
 		i = 0;
@@ -34,7 +36,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 			*((unsigned char *) dest + i) = *((unsigned char *) src + i);
 		}
 	}
-	return (*(unsigned char *) dest);
+	return ((unsigned char *) dest);
 }
 
 /*

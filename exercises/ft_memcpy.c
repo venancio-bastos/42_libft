@@ -6,7 +6,7 @@
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 16:13:03 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/24 13:14:07 by vebastos         ###   ########.fr       */
+/*   Updated: 2025/10/27 17:40:06 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 	psrc = (const unsigned char *) src;
 	pdest = (unsigned char *) dest;
+	if (!dest && !src)
+		return (NULL);
 	i = 0;
 	while (i < n)
 	{
