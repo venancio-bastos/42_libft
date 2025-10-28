@@ -6,7 +6,7 @@
 /*   By: vebastos <vebastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 00:29:23 by vebastos          #+#    #+#             */
-/*   Updated: 2025/10/27 16:54:41 by vebastos         ###   ########.fr       */
+/*   Updated: 2025/10/28 14:09:32 by vebastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,19 @@ char	*copy_next_word(char const *s, char c, int *i)
 	return (word);
 }
 
+void	free_split(char **arr, int index)
+{
+	int	j;
+
+	j = 0;
+	while (j < index)
+	{
+		free(arr[j]);
+		j++;
+	}
+	free(arr);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	int		i;
@@ -73,7 +86,10 @@ char	**ft_split(char const *s, char c)
 			break ;
 		arr[x] = copy_next_word(s, c, &i);
 		if (!arr[x])
+		{
+			free_split(arr, x);
 			return (NULL);
+		}
 		x++;
 	}
 	arr[x] = NULL;
